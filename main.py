@@ -3,7 +3,7 @@ import requests
 API_KEY = "38c2d5cb977fe2306231c68517b66f22"
 WS_URL = "http://api.weatherstack.com/current"
 
-City = 'London'
+City = input("Enter a city: ")
 parameters = {'access_key': API_KEY, 'query': City}
 response = requests.get(WS_URL, parameters)
 js = response.json()
